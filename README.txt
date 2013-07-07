@@ -1,0 +1,1 @@
+This is a demo project to demonstrate the Inflector library for .Net.
