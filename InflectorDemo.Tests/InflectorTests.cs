@@ -70,7 +70,7 @@ namespace InflectorDemo.Tests
 
         #region ToCamelCase
         [Test]
-        public void ToCamelCase_Test_Addresses()
+        public void ToCamelCase_Test_Address()
         {
             const string plural = "Address";
 
@@ -80,7 +80,7 @@ namespace InflectorDemo.Tests
         }
 
         [Test]
-        public void ToCamelCase_Test_Wolves()
+        public void ToCamelCase_Test_CustomerContact()
         {
             const string plural = "CustomerContact";
 
@@ -90,13 +90,23 @@ namespace InflectorDemo.Tests
         }
 
         [Test]
-        public void ToCamelCase_Test_Cars()
+        public void ToCamelCase_Test_Customercontact()
         {
             const string plural = "Customercontact";
 
             var result = plural.ToCamelCase();
 
             Assert.AreEqual("customercontact", result);
+        }
+
+        [Test]
+        public void ToCamelCase_Test_customerContact()
+        {
+            const string plural = "customerContact";
+
+            var result = plural.ToCamelCase();
+
+            Assert.AreEqual("customerContact", result);
         }
         #endregion
     }
